@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@drawable/home_backgroud"
+        >
+
+    <LinearLayout
+            android:id="@+id/menuListView"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_todo"
+            android:layout_margin="6dp"
+            >
+        <LinearLayout
+                android:id="@+id/noticeLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_notice_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="公告列表"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="18dp"
+                    >
+
+            </TextView>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginRight="18dp">
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/serviceTelephoneLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_tel_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="客服电话"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="18dp"
+                        >
+
+                </TextView>
+                <TextView
+                        android:id="@+id/telPhoneTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        >
+
+                </TextView>
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginRight="18dp">
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/serviceEmailLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_email_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="客服邮箱"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        >
+                </TextView>
+                <TextView
+                        android:id="@+id/emailAddressTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="14dp"
+                        android:layout_marginLeft="8dp"
+                        >
+                </TextView>
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginRight="18dp">
+            </ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_todo"
+            android:layout_margin="6dp"
+            >
+        <LinearLayout
+                android:id="@+id/aboutUsLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_about_us_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="关于我们"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="8dp"
+                    >
+
+            </TextView>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginRight="18dp">
+            </ImageView>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/versionCheckingLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_service_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="版本检测"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        >
+
+                </TextView>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:textSize="16dp"
+                        android:layout_marginLeft="8dp"
+                        >
+
+                </TextView>
+
+            </LinearLayout>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/right_arrow"
+                    android:layout_marginRight="18dp">
+            </ImageView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

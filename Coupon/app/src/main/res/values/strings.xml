@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="application_name">达人说</string>
+    <string name="loading_new_data">加载数据中...</string>
+    <string name="refreshing">刷新中...</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="loading_new_data_success">加载数据成功</string>
+    <string name="refreshing_success">刷新成功</string>
+    <string name="occur_server_data_error">服务器数据错误</string>
+    <string name="occur_network_error">网络错误</string>
+    <string name="occur_unknow_error">出现未知错误</string>
+    <string name="no_data">暂无数据</string>
+    <string name="no_more_data">无更多数据</string>
+</resources>

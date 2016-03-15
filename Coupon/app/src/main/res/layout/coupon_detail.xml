@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+
+        >
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            >
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="#fefefd"
+                >
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"
+                    >
+
+                <ImageView
+                        android:id="@+id/couponDetailImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:scaleType="centerCrop"
+                        android:layout_marginLeft="10dp">
+
+                </ImageView>
+
+                <TextView
+                        android:id="@+id/couponNameTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text=""
+                        android:layout_marginLeft="20dp"
+                        android:textColor="#343434"
+                        android:textSize="20dp"
+                        >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_item_divider"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    ></LinearLayout>
+
+            <TextView
+                    android:id="@+id/couponDetailTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textColor="#000000"
+                    android:layout_margin="10dp"
+                    ></TextView>
+            <ImageView
+                    android:id="@+id/couponDetailBigImageView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    ></ImageView>
+            <TextView
+                    android:id="@+id/couponTimeMSGTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    >
+            </TextView>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    >
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+                    <Button
+                            android:id="@+id/couponCommentButton"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="2dp"
+                            android:background="@drawable/detail_button_select"
+                            android:drawableTop="@drawable/pl_ico"
+                            android:text="评论"
+                            >
+                    </Button>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+                    <Button
+                            android:id="@+id/couponCollectionButton"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="2dp"
+                            android:background="@drawable/detail_button_select"
+                            android:drawableTop="@drawable/star_ico"
+                            android:text="加入特权"
+                            android:textSize="13dp"
+                            >
+                    </Button>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+                    <Button
+                            android:id="@+id/couponShareButton"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="2dp"
+                            android:background="@drawable/detail_button_select"
+                            android:drawableTop="@drawable/heart_ico"
+                            android:text="分享微博"
+                            android:textSize="13dp"
+                            >
+                    </Button>
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        >
+                    <Button
+                            android:id="@+id/couponSendButton"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:paddingTop="6dp"
+                            android:paddingBottom="2dp"
+                            android:background="@drawable/detail_button_select"
+                            android:drawableTop="@drawable/send_ico"
+                            android:text="发送好友"
+                            android:textSize="13dp"
+
+                            >
+                    </Button>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_todo"
+                    android:layout_margin="6dp"
+                    >
+                <LinearLayout
+                        android:id="@+id/couponAddressLinearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/categories_cell_bg_normal"
+                        >
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/more_about_us_icon"
+                            android:layout_marginLeft="12dp">
+                    </ImageView>
+                    <TextView
+                            android:id="@+id/couponAddressTextView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textSize="16dp"
+                            android:layout_marginLeft="8dp"
+                            >
+
+                    </TextView>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow"
+                            android:layout_marginRight="18dp">
+                    </ImageView>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/couponTelPhoneLinearLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+
+                        >
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/more_tel_icon"
+                            android:layout_marginLeft="12dp">
+
+                    </ImageView>
+                    <TextView
+                            android:id="@+id/couponTelPhoneTextView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+
+                            android:textSize="16dp"
+                            android:layout_marginLeft="8dp"
+                            >
+
+                    </TextView>
+                    <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/right_arrow"
+                            android:layout_marginRight="18dp">
+                    </ImageView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/couponCommentLinearLayout"
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_todo"
+                    android:layout_margin="6dp"
+                    android:gravity="center_vertical"
+                    >
+                <TextView
+                        android:id="@+id/couponCommentTextView"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:gravity="center"
+
+                        android:textSize="16dp"
+                        android:layout_marginLeft="8dp"
+                        >
+                </TextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

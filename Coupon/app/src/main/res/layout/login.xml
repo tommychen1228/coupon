@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/home_backgroud"
+        >
+    <LinearLayout
+            android:id="@+id/menuListView"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_todo"
+            android:layout_margin="6dp"
+            >
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_email_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱："
+                        android:layout_marginLeft="8dp"
+                        android:textSize="18dp"
+                        android:textColor="#444444"
+                        >
+
+                </TextView>
+                <EditText
+                        android:id="@+id/EmailEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:background="#00ffffff"
+                        android:hint="请输入您Email地址"
+                        >
+
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="密码："
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入您的密码"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:inputType="textPassword"
+                        android:background="#00ffffff"
+                        >
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+        <Button
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/login_button"
+                >
+        </Button>
+        <Button
+                android:id="@+id/registerPageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/register_button"
+                >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

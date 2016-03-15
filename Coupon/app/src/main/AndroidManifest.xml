@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.myideaway.coupon"
+          android:installLocation="auto">
+
+    <application android:label="@string/application_name"
+                 android:icon="@drawable/ic_launcher"
+                 android:name=".view.CouponApplication"
+                 tools:replace="label, icon">
+        <meta-data android:value="@string/app_config_umeng_key" android:name="UMENG_APPKEY"/>
+
+        <service
+                android:name="com.umeng.common.net.DownloadingService"
+                android:process=":DownloadingService">
+        </service>
+        <activity
+                android:name="com.umeng.update.UpdateDialogActivity"
+                android:theme="@android:style/Theme.Translucent.NoTitleBar">
+        </activity>
+        <activity android:name=".view.SplashActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:label="@string/application_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".view.WelcomeActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name="com.google.zxing.client.android.CaptureActivity"
+                  android:screenOrientation="landscape"
+                  android:clearTaskOnLaunch="true"
+                  android:stateNotNeeded="true"
+                  android:configChanges="orientation|keyboardHidden"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity android:name=".view.MainTabActivity"
+                  android:theme="@android:style/Theme.Black.NoTitleBar"
+                  android:label="@string/application_name"
+                  android:windowSoftInputMode="stateUnspecified|adjustPan"
+                >
+
+        </activity>
+
+        <activity android:name=".view.HomePageActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.CouponActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.NearByActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.UserActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.MoreActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.NoticeListActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.AboutUsActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.CouponDetailActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.CommentListActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.CommentWriteActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.NoticeActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.MyCollectionActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.OtherCouponActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.OtherShopActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.SelectCityActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.MyCouponActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.AddressMapActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.ChangPasswordActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.RegisterActivity"
+                  android:label="@string/application_name">
+        </activity>
+        <activity android:name=".view.LoginActivity"
+                  android:label="@string/application_name">
+        </activity>
+
+        <service android:name="com.baidu.location.f" android:enabled="true"
+                 android:process=":remote">
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+    <uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"></uses-permission>
+
+    <supports-screens
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:resizeable="true"
+            android:smallScreens="true"/>
+
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_config_path_cache_images">/cache/images</string>
+    <string name="app_config_baidumap_key">B0opXGrlBQkEyY2N930r3DDH</string>
+    <string name="app_config_umeng_key">52db406956240b93730a7ced</string>
+    <string name="app_config_uri_server">http://t1.fanwe.net:82/mapi/index.php</string>
+</resources>

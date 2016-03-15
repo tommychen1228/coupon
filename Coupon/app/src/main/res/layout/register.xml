@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/home_backgroud"
+        >
+    <LinearLayout
+            android:id="@+id/menuListView"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_todo"
+            android:layout_margin="6dp"
+            >
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_email_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="邮箱："
+                        android:layout_marginLeft="8dp"
+                        android:textSize="18dp"
+                        android:textColor="#444444"
+                        >
+
+                </TextView>
+                <EditText
+                        android:id="@+id/EmailEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="16dp"
+                        android:background="#00ffffff"
+                        android:hint="请输入您Email地址"
+                        >
+
+                </EditText>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="昵称："
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <EditText
+                        android:id="@+id/userNameEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入您的昵称"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="#00ffffff"
+                        >
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="密码："
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <EditText
+                        android:id="@+id/passwordEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入您的密码"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:inputType="textPassword"
+                        android:background="#00ffffff"
+                        >
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/edit_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="重复："
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <EditText
+                        android:id="@+id/repeatPasswordEditText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请再次输入密码"
+                        android:textSize="16dp"
+                        android:inputType="textPassword"
+                        android:layout_marginLeft="8dp"
+                        android:background="#00ffffff"
+                        >
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/more_tel_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="电话："
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <EditText
+                        android:id="@+id/telEditText"
+
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="请输入您的电话号码"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="8dp"
+                        android:background="#00ffffff"
+                        >
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/categories_cell_bg_normal"
+                >
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/star_icon"
+                    android:layout_marginLeft="12dp">
+
+            </ImageView>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="性别："
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <RadioGroup
+                        android:id="@+id/sexRadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="性别"
+                        android:orientation="horizontal"
+                        >
+                    <RadioButton
+                            android:id="@+id/manRadioButton"
+                            android:checked="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="男"
+                            android:textColor="#666666"
+                            android:layout_margin="6dp"
+                            >
+                    </RadioButton>
+                    <RadioButton
+                            android:id="@+id/womanRadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="女"
+                            android:textColor="#666666"
+                            android:layout_margin="6dp"
+                            >
+
+                    </RadioButton>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+            android:id="@+id/registerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_gravity="center"
+            android:background="@drawable/register_button_2"
+            >
+    </Button>
+</LinearLayout>

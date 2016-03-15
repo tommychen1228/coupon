@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <com.myideaway.coupon.view.LoginView
+            android:id="@+id/loginView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    </com.myideaway.coupon.view.LoginView>
+    <LinearLayout
+            android:id="@+id/userInfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/home_backgroud"
+
+            >
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_todo"
+                android:layout_margin="6dp"
+                >
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="100dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/categories_cell_bg_normal"
+                    >
+
+                <ImageView
+                        android:id="@+id/userPortraitImageView"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:src="@drawable/portraits"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="20dp">
+
+                </ImageView>
+                <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        >
+
+                    <TextView
+                            android:id="@+id/userNameTextView"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tommy Chen"
+                            android:layout_marginLeft="20dp"
+                            android:textColor="#343434"
+                            android:textSize="20dp"
+                            >
+                    </TextView>
+                    <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+
+                            >
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="积分："
+                                android:layout_marginLeft="20dp"
+                                android:textSize="17dp"
+                                android:textColor="#444444"
+                                >
+                        </TextView>
+                        <TextView
+                                android:id="@+id/creditsTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text=""
+                                android:textSize="17dp"
+                                android:textColor="#444444"
+                                >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/changePasswordLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/categories_cell_bg_normal"
+                    >
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/edit_icon"
+                        android:layout_marginLeft="12dp">
+                </ImageView>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="修改密码"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="18dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_arrow"
+                        android:layout_marginRight="18dp">
+                </ImageView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/collectionLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/categories_cell_bg_normal"
+                    >
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_icon"
+                        android:layout_marginLeft="12dp">
+
+                </ImageView>
+
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="我的特权"
+                        android:layout_marginLeft="8dp"
+                        android:textSize="18dp"
+                        android:textColor="#444444"
+                        >
+
+                </TextView>
+
+                <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_arrow"
+                        android:layout_marginRight="18dp">
+                </ImageView>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                    <!--android:id="@+id/couponLinearLayout"-->
+                    <!--android:layout_width="fill_parent"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:background="@drawable/categories_cell_bg_normal"-->
+                    <!-->-->
+
+                <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/star_icon"-->
+                        <!--android:layout_marginLeft="12dp">-->
+
+                <!--</ImageView>-->
+
+                <!--<TextView-->
+                        <!--android:layout_width="fill_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:text="我的特权"-->
+                        <!--android:layout_marginLeft="8dp"-->
+                        <!--android:textSize="18dp"-->
+                        <!--android:textColor="#444444"-->
+                        <!-->-->
+
+                <!--</TextView>-->
+
+                <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:src="@drawable/right_arrow"-->
+                        <!--android:layout_marginRight="18dp">-->
+                <!--</ImageView>-->
+            <!--</LinearLayout>-->
+
+
+            <LinearLayout
+                    android:id="@+id/exitLinearLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    >
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/exit_icon"
+                        android:layout_marginLeft="12dp">
+
+                </ImageView>
+
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="退出登陆"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="8dp"
+                        android:textColor="#444444"
+                        >
+                </TextView>
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/right_arrow"
+                        android:layout_marginRight="18dp">
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
